@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px 30px 0px;
+    background-color: #00FF00;
+}
+
+.cabecalho-logo, .cabecalho-frase {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.principal-parte1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0px 40px 0px;
+    background-color: #4169E1;
+}
+
+.principal-parte1 div {
+    line-height: 1;
+}
+
+.principal-parte1 h1 {
+    color: #FFA500;
+}
+
+.principal-noticias {
+    font-size: 32px;
+}
+
+.principal-hoje {
+    font-size: 56px;
+}
+
+.principal-parte1 p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.principal-parte2 {
+    margin-top: 10px;
+    margin-bottom: 108px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+.principal-parte2 div{
+    width: 321px;
+    height: 192px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.principal-parte2 h1 {
+    color: #FFFFFF;
+    background-color: #000000;
+    opacity: 50%;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0px 5px 10px;
+}
+
+#restaurante {
+    background-image: url("img/culinaria.svg");
+}
+
+#bolsa {
+    background-image: url("img/economia.svg");
+}
+
+#politica {
+    background-image: url("img/politica.svg");
+}
+
+#esporte {
+    background-image: url("img/esportes.svg");
+}
+
+#musica {
+    background-image: url("img/musica.svg");
+}
+
+#amizade {
+    background-image: url("img/amizade.svg");
+}
+
+#praia {
+    background-image: url("img/praia.svg");
+}
+
+#tecnologico {
+    background-image: url("img/cientifico.svg");
+}
+
+#rio {
+    background-image: url("img/rio.svg");
+}
+
+#cuidadosaude {
+    background-image: url("img/dicasaude.svg");
+}
+
+#diasaude {
+    background-image: url("img/diasaude.svg");
+}
+
+#zoologico {
+    background-image: url("img/zoologico.svg");
+}
+
+footer {
+    background-color: #4169E1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div {
+    line-height: 1;
+}
+
+#rodape-noticias {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+#rodape-hoje {
+    margin-bottom: 20px;
+}
+
+footer h1 {
+    color: #FFA500;
+}
+
+footer h2 {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#rodape-credito {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.principal-parte2 div:hover {
+    transform: scale3d(1.1,1.1,1);
+}
+
+@media (max-width: 1050px) {
+    .principal-parte2 {
+        grid-template-columns: auto auto;
+        margin-bottom: 81px;
+    }
+    .cabecalho {
+        padding: 20px 0px 20px 0px;
+      }
+    .cabecalho-logo, .cabecalho-frase {
+        font-size: 30px;
+    }
+    .principal-noticias {
+        font-size: 24px;
+    }
+    .principal-hoje {
+        font-size: 42px;
+    }
+    .principal-parte1 p, footer h2 {
+        font-size: 15px;
+    }
+    .principal-parte1 {
+        padding: 30px 0px 30px 0px;
+    }
+    #rodape-noticias {
+        margin-top: 22px;
+        font-size: 14px;
+    }    
+    #rodape-hoje {
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 900px) {
+    .cabecalho-frase{
+        font-size: 20px;
+    };
+}
+
+@media (max-width: 700px) {
+    .cabecalho, .principal-parte1 {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0px 10px 0px;
+    }
+    .principal-parte2 {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .cabecalho-frase {
+        font-size: 15px;
+    }
+    .principal-parte1 p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 440px) {
+    .principal-parte1 p {
+        font-size: 12px;
+    }
+    .cabecalho-frase {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 400px){
+    .principal-parte1 p {
+        font-size: 11px;
+    }
+}
